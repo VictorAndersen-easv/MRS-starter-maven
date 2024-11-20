@@ -1,12 +1,12 @@
 package dk.easv.mrs.BLL;
+
 //Java imports
 import java.util.List;
+
 //Project imports
 import dk.easv.mrs.BE.Movie;
 import dk.easv.mrs.BLL.util.MovieSearcher;
 import dk.easv.mrs.DAL.IMovieDataAccess;
-import dk.easv.mrs.DAL.MovieDAO_File;
-import dk.easv.mrs.DAL.MovieDAO_Mock;
 import dk.easv.mrs.DAL.db.MovieDAO_DB;
 
 
@@ -19,6 +19,11 @@ public class MovieManager {
         movieDAO = new MovieDAO_DB();
     }
 
+    /**
+     * Gets all movies
+     * @return A list of movies from the DAL
+     * @throws Exception
+     */
     public List<Movie> getAllMovies() throws Exception {
         return movieDAO.getAllMovies();
     }
