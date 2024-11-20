@@ -44,7 +44,16 @@ public class MovieViewController implements Initializable {
 
         tblMovies.setItems(movieModel.getObservableMovies());
         lstMovies.setItems(movieModel.getObservableMovies());
-        
+
+        tblMovies.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> {
+            //Lambda udtryk
+            //System.out.println(newValue);
+
+
+
+        });
+
 
         txtMovieSearch.textProperty().addListener((observableValue, oldValue, newValue) -> {
             try {
