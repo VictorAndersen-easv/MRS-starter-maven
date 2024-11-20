@@ -46,7 +46,7 @@ public class MovieDAO_File implements IMovieDataAccess {
     }
 
     @Override
-    public Movie createMovie(String title, int year) throws Exception {
+    public Movie createMovie(Movie newMovie) throws Exception {
         return null;
     }
 

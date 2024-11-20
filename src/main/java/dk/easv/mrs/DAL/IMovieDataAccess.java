@@ -6,7 +6,7 @@ import java.util.List;
 
     public List<Movie> getAllMovies() throws Exception;
 
-    public Movie createMovie(String title, int year) throws Exception;
+    public Movie createMovie(Movie newMovie) throws Exception;
 
     public void updateMovie(Movie movie) throws Exception;
 
